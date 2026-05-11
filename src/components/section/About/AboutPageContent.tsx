@@ -1,16 +1,10 @@
-import HeroSection from "@/components/common/HeroSection";
 import { advantages } from "@/data/aboutContent";
-import { pageHeroContent } from "@/data/heroContent";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutPageContent() {
-  const hero = pageHeroContent.about;
   return (
-    <main className="bg-white">
-      {/* Hero Section */}
-      <HeroSection {...hero} />
-
+    <div>
       {/* About School Content */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
@@ -30,14 +24,14 @@ export default function AboutPageContent() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/about"
+                href="/admission"
                 className="
       px-7 py-3 rounded-full bg-pink-600 text-white font-semibold
       hover:bg-pink-700 transition-all duration-300
       hover:-translate-y-1 shadow-lg
     "
               >
-                Learn More
+                Enroll Now
               </Link>
 
               <Link
@@ -112,6 +106,6 @@ export default function AboutPageContent() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
