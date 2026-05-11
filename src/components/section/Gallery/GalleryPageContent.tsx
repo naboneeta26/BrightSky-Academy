@@ -1,7 +1,5 @@
 "use client";
 
-import HeroSection from "@/components/common/HeroSection";
-import { pageHeroContent } from "@/data/heroContent";
 import Image from "next/image";
 import { useState } from "react";
 import GalleryLightbox from "./GalleryLightBox";
@@ -16,7 +14,6 @@ const images = [
 ];
 
 export default function GalleryPageContent() {
-  const hero = pageHeroContent.gallery;
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const nextImage = () => {
@@ -32,10 +29,7 @@ export default function GalleryPageContent() {
   };
 
   return (
-    <main>
-      {/* hero section */}
-      <HeroSection {...hero} />
-
+    <section>
       {/* Gallery Section */}
       <div className="py-24 bg-white min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,6 +68,6 @@ export default function GalleryPageContent() {
           />
         </div>
       </div>
-    </main>
+    </section>
   );
 }

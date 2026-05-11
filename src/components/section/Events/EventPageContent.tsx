@@ -1,27 +1,20 @@
 "use client";
-
-import HeroSection from "@/components/common/HeroSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { events } from "@/data/eventContent";
-import { pageHeroContent } from "@/data/heroContent";
 import { Clock, MapPin } from "lucide-react";
 import { useState } from "react";
 
 export default function EventPageContent() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
-  const hero = pageHeroContent.events;
 
   const totalPages = Math.ceil(events.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const paginatedEvents = events.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <main>
-      {/* hero section */}
-      <HeroSection {...hero} />
-
+    <section>
       {/* Event Section */}
       <div className="py-24 bg-gray-100 min-h-screen">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -125,6 +118,6 @@ export default function EventPageContent() {
           )}
         </div>
       </div>
-    </main>
+    </section>
   );
 }

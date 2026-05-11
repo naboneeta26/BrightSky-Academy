@@ -1,9 +1,13 @@
-import ContactPageContent from "@/components/section/Contact/ContactPageContent";
+import HeroSection from "@/components/common/HeroSection";
+import ContactForm from "@/components/section/Contact/ContactForm";
+import { pageHeroContent } from "@/data/heroContent";
 
 export default function ContactPage() {
+  const hero = pageHeroContent.contact;
   return (
-    <>
-      <ContactPageContent />
-    </>
+    <main>
+      <HeroSection {...hero} />
+      <ContactForm />
+    </main>
   );
 }

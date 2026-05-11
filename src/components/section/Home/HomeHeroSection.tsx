@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 
-export const Hero = () => {
+export const HomeHeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-white pt-16 pb-32 lg:pt-32 lg:pb-48">
       <div className="max-w-7xl mx-auto px-4 sm:p-6 lg:px-8">

@@ -1,15 +1,8 @@
-import HeroSection from "@/components/common/HeroSection";
-import { pageHeroContent } from "@/data/heroContent";
-
 export default function BlogPageContent() {
-  const hero = pageHeroContent.blogs;
-
   return (
-    <main>
-      {/* hero section */}
-      <HeroSection {...hero} />
-
+    <section>
       {/* Blog posts */}
-    </main>
+      <h1 className="text-4xl text-center">Coming soon</h1>
+    </section>
   );
 }

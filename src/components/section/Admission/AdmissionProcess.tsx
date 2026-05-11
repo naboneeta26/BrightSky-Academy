@@ -29,7 +29,7 @@ export default function AdmissionProcess() {
         </div>
 
         {/* Timeline */}
-        <div className="relative mt-24">
+        <div className="relative mt-20">
           {/* Line */}
           <div className="hidden lg:block absolute top-16 left-0 w-full h-1 bg-linear-to-r from-pink-300 via-pink-400 to-purple-300 rounded-full"></div>
 
@@ -39,9 +39,9 @@ export default function AdmissionProcess() {
               <div key={step.id} className="text-center group">
                 {/* Circle */}
                 <div
-                  className={`w-32 h-32 mx-auto rounded-full bg-linear-to-br ${step.color} flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2`}
+                  className={`w-24 h-24 mx-auto rounded-full bg-linear-to-br ${step.color} flex items-center justify-center shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2`}
                 >
-                  <span className="text-5xl font-black text-white">
+                  <span className="text-4xl font-black text-white">
                     {step.id}
                   </span>
                 </div>
@@ -62,10 +62,10 @@ export default function AdmissionProcess() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="flex justify-center mt-24">
+        <div className="flex justify-center mt-20">
           <a
             href="#enquiry-form"
-            className="bg-linear-to-r from-pink-500 to-purple-500 hover:opacity-90 text-white px-10 py-5 rounded-full text-lg font-semibold shadow-2xl transition-all duration-300 hover:scale-105"
+            className="cursor-pointer bg-linear-to-r from-pink-500 to-purple-500 hover:opacity-90 text-white px-10 py-5 rounded-full text-lg font-semibold shadow-2xl transition-all duration-300 hover:scale-105"
           >
             Start Admission →
           </a>
