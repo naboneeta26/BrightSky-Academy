@@ -136,9 +136,19 @@ export default function ContactForm() {
                   </p>
 
                   <h3 className="text-base md:text-lg font-semibold text-pink-500 mt-2 leading-7 md:leading-8">
-                    +91 7468343210
+                    <Link
+                      href="tel:+917823456718"
+                      className="hover:underline cursor-pointer hover:text-blue-600"
+                    >
+                      +91 7823456718
+                    </Link>
                     <br />
-                    +91 6876543211
+                    <Link
+                      href="tel:+917400456718"
+                      className="hover:underline cursor-pointer hover:text-blue-600"
+                    >
+                      +91 7400456718
+                    </Link>
                   </h3>
                 </div>
               </div>
@@ -156,7 +166,7 @@ export default function ContactForm() {
 
                   <Link
                     href="mailto:info@brightskyacademy.com"
-                    className="cursor-pointer text-base md:text-lg font-semibold text-blue-500 mt-2 break-all"
+                    className="cursor-pointer hover:text-blue-600 hover:underline text-base md:text-lg font-semibold text-blue-400 mt-2 break-all"
                   >
                     info@brightskyacademy.com
                   </Link>

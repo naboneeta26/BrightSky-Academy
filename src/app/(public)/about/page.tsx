@@ -1,6 +1,7 @@
 import HeroSection from "@/components/common/HeroSection";
 import AboutPageContent from "@/components/section/About/AboutPageContent";
 import AboutSchoolAdvantages from "@/components/section/About/AboutSchoolAdvantages";
+import AboutSchoolFeatures from "@/components/section/About/AboutSchoolFeatures";
 import { pageHeroContent } from "@/data/heroContent";
 
 export default function AboutPage() {
@@ -9,6 +10,7 @@ export default function AboutPage() {
     <main className="bg-white">
       <HeroSection {...hero} />
       <AboutPageContent />
+      <AboutSchoolFeatures />
       <AboutSchoolAdvantages />
     </main>
   );

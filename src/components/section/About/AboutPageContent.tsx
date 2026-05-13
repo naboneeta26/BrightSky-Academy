@@ -5,7 +5,18 @@ export default function AboutPageContent() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-        {/* Left Content */}
+        {/* Left Image */}
+        <div className="relative  rounded-[32px] overflow-hidden shadow-2xl">
+          <Image
+            src="/about.jpg"
+            alt="About"
+            width={800}
+            height={500}
+            className="w-full h-112.5 object-cover"
+          />
+        </div>
+
+        {/* Right Content */}
         <div>
           <span className="inline-block px-4 py-1.5 rounded-full bg-pink-100 text-pink-600 text-sm font-semibold mb-6">
             ABOUT OUR SCHOOL
@@ -42,17 +53,6 @@ export default function AboutPageContent() {
               Contact Us
             </Link>
           </div>
-        </div>
-
-        {/* Right Image */}
-        <div className="relative  rounded-[32px] overflow-hidden shadow-2xl">
-          <Image
-            src="/about.jpg"
-            alt="About"
-            width={800}
-            height={500}
-            className="w-full h-112.5 object-cover"
-          />
         </div>
       </div>
     </section>
