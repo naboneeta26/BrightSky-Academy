@@ -1,4 +1,5 @@
 import { admissionSteps } from "@/data/admisionContent";
+import Link from "next/link";
 
 export default function AdmissionProcess() {
   return (
@@ -63,12 +64,12 @@ export default function AdmissionProcess() {
 
         {/* Bottom CTA */}
         <div className="flex justify-center mt-20">
-          <a
+          <Link
             href="#enquiry-form"
             className="cursor-pointer bg-linear-to-r from-pink-500 to-purple-500 hover:opacity-90 text-white px-10 py-5 rounded-full text-lg font-semibold shadow-2xl transition-all duration-300 hover:scale-105"
           >
             Start Admission →
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -185,7 +185,7 @@ export default function ContactForm() {
 
             {/* SOCIAL BUTTONS */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10 md:mt-12">
-              <a
+              <Link
                 href="https://facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -193,9 +193,9 @@ export default function ContactForm() {
               >
                 <FaFacebookF className="w-4 h-4" />
                 Facebook
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -203,9 +203,9 @@ export default function ContactForm() {
               >
                 <FaInstagram className="w-4 h-4" />
                 Instagram
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="https://wa.me/1234567890"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -213,9 +213,9 @@ export default function ContactForm() {
               >
                 <FaWhatsapp className="w-4 h-4" />
                 WhatsApp
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="https://linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -223,7 +223,7 @@ export default function ContactForm() {
               >
                 <FaLinkedinIn className="w-4 h-4" />
                 LinkedIn
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -336,7 +336,7 @@ export default function ContactForm() {
                 Or reach us directly on WhatsApp
               </p>
 
-              <a
+              <Link
                 href="https://wa.me/1234567890"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -344,7 +344,7 @@ export default function ContactForm() {
               >
                 <MessageCircle className="w-5 h-5" />
                 Chat on WhatsApp
-              </a>
+              </Link>
             </div>
           </div>
         </div>

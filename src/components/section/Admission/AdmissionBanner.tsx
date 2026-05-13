@@ -36,13 +36,13 @@ export default function AdmissionBanner() {
           </Link>
 
           {/* Call Button */}
-          <a
+          <Link
             href="tel:+917974854118"
             className="cursor-pointer flex items-center gap-3 border border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300"
           >
             <Phone className="w-5 h-5" />
             Call Us
-          </a>
+          </Link>
         </div>
       </div>
     </section>
