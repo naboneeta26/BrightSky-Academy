@@ -1,3 +1,5 @@
+// data/eventContent.ts
+
 export const events = [
     {
       title: "Annual Sports Day",

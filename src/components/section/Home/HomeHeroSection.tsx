@@ -31,7 +31,7 @@ export const HomeHeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="cursor-pointer w-full sm:w-auto rounded-full px-8 py-6 text-lg border-purple-300 font-medium hover:bg-purple-300 transition-all"
+                className="cursor-pointer w-full sm:w-auto rounded-full px-8 py-6 text-lg border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition-all"
               >
                 Explore Programs
               </Button>

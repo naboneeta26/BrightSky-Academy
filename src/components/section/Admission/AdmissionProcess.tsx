@@ -31,7 +31,7 @@ export default function AdmissionProcess() {
         {/* Timeline */}
         <div className="relative mt-20">
           {/* Line */}
-          <div className="hidden lg:block absolute top-16 left-0 w-full h-1 bg-linear-to-r from-pink-300 via-pink-400 to-purple-300 rounded-full"></div>
+          <div className="hidden lg:block absolute top-12 left-0 w-full h-1 bg-linear-to-r from-pink-300 via-pink-400 to-purple-300 rounded-full"></div>
 
           {/* Steps */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 relative z-10">

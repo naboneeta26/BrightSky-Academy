@@ -1,3 +1,5 @@
+// data/footerContent.ts
+
 export const quickLinks = [
     { label: "About Us", href: "/about" },
     { label: "Our Programs", href: "/programs" },

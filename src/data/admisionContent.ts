@@ -1,3 +1,5 @@
+// data/admissionContent.ts
+
 export const admissionSteps = [
   {
     id: 1,

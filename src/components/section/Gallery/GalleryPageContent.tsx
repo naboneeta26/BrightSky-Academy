@@ -50,8 +50,9 @@ export default function GalleryPageContent() {
                   alt="Gallery"
                   height={500}
                   width={500}
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full transition duration-500 hover:scale-105"
                 />
+
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300"></div>
               </div>

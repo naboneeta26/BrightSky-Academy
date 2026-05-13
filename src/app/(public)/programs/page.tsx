@@ -1,7 +1,6 @@
 import HeroSection from "@/components/common/HeroSection";
 import ProgramPageContent from "@/components/section/Programs/ProgramPageContent";
 import { pageHeroContent } from "@/data/heroContent";
-import { programs } from "@/data/programContent";
 
 export default function ProgramsPage() {
   const hero = pageHeroContent.programs;
@@ -11,15 +10,7 @@ export default function ProgramsPage() {
       <HeroSection {...hero} />
 
       {/* PROGRAMS */}
-      <div className="py-20">
-        {programs.map((program, index) => (
-          <ProgramPageContent
-            key={program.id}
-            program={program}
-            reverse={index % 2 !== 0}
-          />
-        ))}
-      </div>
+      <ProgramPageContent />
     </main>
   );
 }

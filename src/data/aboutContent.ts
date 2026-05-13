@@ -1,3 +1,5 @@
+// data/aboutContent.ts
+
 import { Handshake, HeartHandshake, Palette, Sparkles, Trophy } from "lucide-react";
 
 export const advantages = [

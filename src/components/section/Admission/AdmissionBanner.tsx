@@ -29,17 +29,20 @@ export default function AdmissionBanner() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-8">
           {/* Apply Button */}
-          <Link href="/admission">
+          <Link href="/admission#enquiry-form">
             <button className="cursor-pointer bg-white text-pink-500 hover:bg-pink-50 px-8 py-4 rounded-full text-lg font-semibold shadow-2xl transition-all duration-300 hover:scale-105">
               Apply Now →
             </button>
           </Link>
 
           {/* Call Button */}
-          <button className="cursor-pointer flex items-center gap-3 border border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">
+          <a
+            href="tel:+917974854118"
+            className="cursor-pointer flex items-center gap-3 border border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300"
+          >
             <Phone className="w-5 h-5" />
             Call Us
-          </button>
+          </a>
         </div>
       </div>
     </section>

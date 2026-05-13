@@ -34,8 +34,8 @@ export default function AboutPageContent() {
             <Link
               href="/contact"
               className="
-      px-7 py-3 rounded-full border border-pink-300
-      text-gray-700 font-semibold hover:bg-pink-200
+      px-7 py-3 rounded-full border border-pink-600 text-pink-600
+      font-semibold hover:bg-pink-600 hover:text-white
       transition-all duration-300
     "
             >

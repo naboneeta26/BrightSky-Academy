@@ -1,9 +1,11 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { events } from "@/data/eventContent";
 import { Clock, MapPin } from "lucide-react";
 import { useState } from "react";
+import EventRegistrationModal from "./EventRegistrationForm";
 
 export default function EventPageContent() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -12,6 +14,14 @@ export default function EventPageContent() {
   const totalPages = Math.ceil(events.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const paginatedEvents = events.slice(startIndex, startIndex + itemsPerPage);
+
+  const [open, setOpen] = useState<boolean>(false);
+  const [selectedEvent, setSelectedEvent] = useState<string>("");
+
+  const handleRegisterOpen = (eventTitle: string) => {
+    setSelectedEvent(eventTitle);
+    setOpen(true);
+  };
 
   return (
     <section>
@@ -64,9 +74,17 @@ export default function EventPageContent() {
                         {event.desc}
                       </p>
                       <div className="mt-8">
-                        <Button className="rounded-xl px-10 bg-gray-700 hover:bg-purple-600 transition-colors cursor-pointer">
+                        <Button
+                          className="rounded-xl px-10 bg-gray-700 hover:bg-purple-600 transition-colors cursor-pointer"
+                          onClick={() => handleRegisterOpen(event.title)}
+                        >
                           Register Now
                         </Button>
+                        <EventRegistrationModal
+                          open={open}
+                          onClose={() => setOpen(false)}
+                          eventTitle={selectedEvent}
+                        />
                       </div>
                     </div>
                   </div>

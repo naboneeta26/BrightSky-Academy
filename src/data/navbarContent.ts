@@ -1,3 +1,5 @@
+// data/navbarContent.ts
+
 export const navLinks = [
     { name: "About Us", href: "/about" },
     { name: "Programs", href: "/programs" },
